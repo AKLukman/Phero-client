@@ -1,0 +1,107 @@
+textarea:focus,
+input:focus {
+  outline: none;
+}
+.ull li {
+  list-style: none;
+}
+.ull h1 {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #3333ff;
+  font-size: 32px;
+  width: 200px;
+  text-align: center;
+  margin: 30px 100px;
+}
+.ull {
+  display: inline-block;
+}
+
+#contact {
+  background: #fff;
+  position: relative;
+  width: 450px;
+  margin: 70px 420px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.js #contact {
+  position: absolute;
+  top: 3em;
+  display: none;
+  left: 0;
+  right: 0;
+}
+
+.ull input {
+  border: 0;
+  margin: 1em 40px;
+  width: 300px;
+  padding: 10px;
+  border-bottom: 2px solid #3333ff;
+  background: none;
+  font-family: "Fontawesome", "Source Sans Pro", sans-serif;
+  display: block;
+  color: #3333ff;
+}
+
+.ull textarea {
+  border: 0;
+  width: 300px;
+  height: 100px;
+  display: block;
+  margin-left: 40px;
+  background: none;
+  padding: 10px;
+  font-family: "Fontawesome", "Source Sans Pro", sans-serif;
+  border-bottom: 2px solid #3333ff;
+  color: #3333ff;
+}
+
+#submit {
+  margin: 3em auto 4em;
+  border: 2px solid #3333ff;
+  color: #3333ff;
+}
+#submit:hover {
+  color: #fff;
+}
+
+.btnn {
+  background: none;
+  border: 2px solid #252525;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 15em auto;
+  padding: 1.2em 2em;
+  color: #212121;
+  font-family: "Open Sans";
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: ease all 0.3s;
+  display: block;
+}
+
+.btnn:hover {
+  background: #3333ff;
+  color: #fff;
+  border: #3333ff solid 2px;
+}
+.btnn:active {
+  background: #3333aa;
+  color: #fff;
+  border: #3333aa solid 2px;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: -10px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 3em;
+  color: #ee4444;
+}
