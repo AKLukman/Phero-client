@@ -1,7 +1,9 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import "./complain.css";
+import "./Complain.css";
 import { useHistory } from "react-router-dom";
+import Navigation from "../Shared/Navigation/Navigation";
+import Footer from "../Shared/Footer/Footer";
 const Complain = ({ setLoginUser }) => {
   function sendEmail(e) {
     e.preventDefault();
@@ -21,7 +23,7 @@ const Complain = ({ setLoginUser }) => {
 
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      {/* <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid" className="container">
           <a class="navbar-brand" onClick={() => history.push("/")}>
             WEB service
@@ -51,11 +53,12 @@ const Complain = ({ setLoginUser }) => {
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> */}
+      <Navigation></Navigation>
       <div id="contact">
         <form action="#" onSubmit={sendEmail}>
           <ul className="ull">
-            <h1>Contact</h1>
+            <h1>Complain</h1>
             <li>
               <input
                 type="text"
@@ -69,7 +72,7 @@ const Complain = ({ setLoginUser }) => {
               <textarea
                 name="message"
                 id="message"
-                placeholder="Your message"
+                placeholder="Write Your Complain"
               ></textarea>
             </li>
             <li>
@@ -83,6 +86,7 @@ const Complain = ({ setLoginUser }) => {
           </ul>
         </form>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

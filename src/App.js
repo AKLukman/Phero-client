@@ -13,6 +13,9 @@ import LogIn from "./Pages/LogIn/LogIn/LogIn";
 import PrivateRoute from "./Pages/LogIn/PrivateRoute/PrivateRoute";
 import Register from "./Pages/LogIn/Register/Register";
 import Punishment from "./Pages/Punishment/Punishment";
+import Complain from "./Pages/complain/Complain";
+import Seller from "./Pages/Dashboard/Seller/SellerDetails/Seller";
+import Form from "./Pages/Offer/Offer";
 
 function App() {
   return (
@@ -31,6 +34,9 @@ function App() {
             </Route>
             <Route path="/register">
               <Register></Register>
+            </Route>
+            <Route path="/complain">
+              <Complain></Complain>
             </Route>
             {/* <AdminRoute exact path="/">
               <Home></Home>
@@ -58,11 +64,17 @@ function App() {
             <PrivateRoute path="/sellerProfile/:sellerId">
               <SellerDetails></SellerDetails>
             </PrivateRoute>
+            <PrivateRoute path="/seller/:cmntId">
+              <Seller></Seller>
+            </PrivateRoute>
             <PrivateRoute path="/buyerDetails/:jobsId">
               <BuyerDetails></BuyerDetails>
             </PrivateRoute>
             <PrivateRoute path="/bidding/:jobsDetails">
               <BidForJob></BidForJob>
+            </PrivateRoute>
+            <PrivateRoute path="/offer">
+              <Form></Form>
             </PrivateRoute>
             {/* <AdminRoute path="/blocked">
               <Punishment></Punishment>

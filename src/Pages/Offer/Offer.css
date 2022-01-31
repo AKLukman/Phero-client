@@ -1,0 +1,78 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.cont {
+  background-color: darkseagreen;
+  margin: 40px auto;
+  width: 90%;
+  box-shadow: 1px 1px 4px 1px lightgray;
+}
+.tit {
+  font-size: 50px;
+  font-weight: 700;
+}
+.cont form {
+  width: 100%;
+  padding: 10px;
+}
+.cont label {
+  display: block;
+  letter-spacing: 0.1rem;
+  font-style: italic;
+  margin-bottom: 3px;
+}
+.cont input,
+.cont textarea {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+  box-shadow: 1px 1px 4px 1px rgb(58, 57, 57);
+}
+.cont input:focus,
+.cont textarea:focus {
+  box-shadow: 1px 1px 4px 1px rgb(49, 170, 240);
+}
+.singleItem {
+  margin: 10px 0;
+}
+.bt {
+  width: 100%;
+  text-align: center;
+}
+.btn button {
+  width: 150px;
+  font-size: 18px;
+  letter-spacing: 0.2rem;
+  border: 1px solid transparent;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  margin-top: 5px;
+}
+.bt .btt:hover {
+  border: 1px solid #fefefe;
+  background-color: rgb(199, 202, 199);
+  cursor: pointer;
+}
+.msg {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  letter-spacing: 0.2rem;
+  font-style: italic;
+  width: 140px;
+  padding: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(5, 110, 5);
+  background-color: #fff;
+  border-radius: 5px;
+  display: none;
+}
+.msgAppear {
+  display: block;
+}

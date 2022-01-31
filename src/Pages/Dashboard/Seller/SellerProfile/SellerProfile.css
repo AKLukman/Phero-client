@@ -1,0 +1,29 @@
+.quiz-button {
+  width: 20%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: green;
+  border-radius: 15px;
+  /* display: flex; */
+  padding: 5px;
+  /* justify-content: flex-start; */
+  /* align-items: center; */
+  border: 5px solid #234668;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.update-button {
+  width: 20%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: rgb(128, 0, 96);
+  border-radius: 15px;
+  /* display: flex; */
+  padding: 5px;
+  /* justify-content: flex-start; */
+  /* align-items: center; */
+  border: 5px solid #234668;
+  cursor: pointer;
+  color: #ffffff;
+}

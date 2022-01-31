@@ -24,8 +24,13 @@ const Product = (props) => {
   );
 
   const card = (
+    // <div style={{ container
+    //   spacing={{ xs: 2, md: 3 }}
+    //   columns={{ xs: 4, sm: 8, md: 12 }}}}></div>
+    // <div className="col-md-4 g-4">
+
     <React.Fragment>
-      <CardContent>
+      <CardContent sx={{ backgroundColor: "lightgray" }}>
         {/* <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                     Word of the Day
                 </Typography> */}
@@ -36,11 +41,11 @@ const Product = (props) => {
           {type}
         </Typography>
         <Typography variant="body2">
-          {description}
+          {description.slice(0, 180)}...
           <br />
         </Typography>
       </CardContent>
-      <CardActions>
+      <CardActions sx={{ backgroundColor: "lightgray" }}>
         <Link style={{ textDecoration: "none" }} to={`/bidding/${_id}`}>
           <Button size="small">Bid for job</Button>
         </Link>
@@ -51,6 +56,8 @@ const Product = (props) => {
         </Link>
       </CardActions>
     </React.Fragment>
+
+    // </div>
   );
 
   return (
